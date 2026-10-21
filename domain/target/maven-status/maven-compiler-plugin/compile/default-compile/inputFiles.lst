@@ -1,0 +1,10 @@
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/ApiProxyRejectedException.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/AuthenticationRejectedException.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/Randomness.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/RefreshInProgressException.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/Security.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/SessionFactory.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/SessionMaterial.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/SessionRejectedException.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/TokenProtection.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/domain/src/main/java/com/delivery/web_bff/domain/session/WebSession.java

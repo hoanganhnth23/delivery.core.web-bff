@@ -1,0 +1,12 @@
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/config/WebBffConfiguration.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/config/WebBffOriginFilter.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/infrastructure/auth/HttpAuthGatewayAdapter.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/infrastructure/config/InfrastructureConfiguration.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/infrastructure/proxy/GatewayProxyAdapter.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/infrastructure/session/JpaSessionsAdapter.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/infrastructure/session/JpaWebSessionEntity.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/infrastructure/session/JpaWebSessionRepository.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/infrastructure/session/TokenVault.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/proxy/ApiProxyController.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/session/WebSessionController.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/main/java/com/delivery/web_bff/session/WebSessionExceptionHandler.java

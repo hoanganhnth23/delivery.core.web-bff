@@ -1,0 +1,9 @@
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/test/java/com/delivery/web_bff/auth/HttpAuthGatewayTest.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/test/java/com/delivery/web_bff/config/WebBffOriginFilterTest.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/test/java/com/delivery/web_bff/infrastructure/session/TokenVaultTest.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/test/java/com/delivery/web_bff/proxy/ApiProxyPolicyTest.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/test/java/com/delivery/web_bff/proxy/ApiProxyServiceTest.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/test/java/com/delivery/web_bff/session/LoginLogoutApplicationServiceTest.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/test/java/com/delivery/web_bff/session/RefreshApplicationServiceTest.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/test/java/com/delivery/web_bff/session/SessionFactoryTest.java
+/Users/a/Documents/private/delivery/backend_delivery/web-bff/infrastructure/src/test/java/com/delivery/web_bff/session/WebSessionControllerTest.java
