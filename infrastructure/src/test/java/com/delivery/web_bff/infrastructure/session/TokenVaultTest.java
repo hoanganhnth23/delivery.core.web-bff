@@ -14,7 +14,10 @@ class TokenVaultTest {
         String protectedValue = vault.protect("refresh-secret");
         assertThat(protectedValue).startsWith("v1.").doesNotContain("refresh-secret");
         assertThat(vault.reveal(protectedValue)).isEqualTo("refresh-secret");
-        assertThatThrownBy(() -> vault.reveal(protectedValue.substring(0, protectedValue.length() - 1) + "x"))
+        // Tamper with the last character; pick one that differs, or 1 run in ~64 changes nothing.
+        char last = protectedValue.charAt(protectedValue.length() - 1);
+        String tampered = protectedValue.substring(0, protectedValue.length() - 1) + (last == 'x' ? 'y' : 'x');
+        assertThatThrownBy(() -> vault.reveal(tampered))
                 .isInstanceOf(IllegalStateException.class);
     }
 
