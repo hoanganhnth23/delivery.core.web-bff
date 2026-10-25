@@ -138,6 +138,21 @@ class WebBffApplicationServicesTest {
         assertEquals("csrf", f.lastCsrf);
     }
 
+    @Test
+    void proxyKeepsAllowedHeadersWhateverTheirCase() {
+        // The Gateway forwards header names in lower case; dropping content-type made every
+        // JSON mutation arrive as application/octet-stream (HTTP 500 at Order).
+        Fakes f = new Fakes();
+        var forwarding = new ProxyForwardingApplicationService(new ApiProxyPolicyApplicationService(), f, f);
+        Map<String, List<String>> headers = Map.of("content-type", List.of("application/json"),
+                "idempotency-key", List.of("k-1"), "x-correlation-id", List.of("c-1"),
+                "cookie", List.of("drop"), "authorization", List.of("drop"));
+        forwarding.execute(new UseCases.ProxyRequest(Ports.HttpVerb.POST, "/api/users", null, headers,
+                new byte[] {1}, "sid", "csrf"));
+        assertEquals(Map.of("Content-Type", List.of("application/json"), "Idempotency-Key", List.of("k-1"),
+                "X-Correlation-ID", List.of("c-1")), f.lastHeaders);
+    }
+
     private static WebSession session(String rawSessionId, String csrf) {
         return new WebSession(Security.hash(rawSessionId), "accessCipher", "refreshCipher", "v1", 42,
                 "a@b.test", "ADMIN", Security.hash(csrf), 1, NOW.plus(Duration.ofHours(1)), NOW);
